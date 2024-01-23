@@ -47,7 +47,7 @@ public class rezerwacja extends javax.swing.JFrame {
     {
         try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	polaczenie = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/hotel", "user", "user");			
+	polaczenie = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/hotel", "", "");			
         } catch (Exception e) {
             field_koszt.setText("Wystąpił błąd:"+e.getMessage());
         }
